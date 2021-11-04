@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Maxim Yakimenko 2021 nov 4 1005-->
+<head>
+	<meta charset="utf-8"> 
+	<title>Certificate Validation | Hack The Box</title>
+	<style>
+		ul{list-style-type: none;}
+		li{list-style-type: none; margin:15px;}
+		div{font-family:Calibri;}
+		form{font-family:Calibri;}
+		h1{text-align:center;}
+		p{text-align:center;}
+		a{text-decoration:none; color:#A4B1CD;}
+		a:hover{color:white}
+		h1{font-size:50px;}
+		.autoSize-logo{width:20%; height:auto;}
+		.darkBlue{background-color:#111927; color:white;}
+		.blue{background-color:#141D2B; color:white;}
+		.lightBlue{background-color:#1A2332; color:white;}
+		
+		.frontImg{z-index: 1; position:absolute; height:4%; width:4%;}
+		.frontImg:hover{opacity:0;}
+		.backImg{position:absolute; height:4%; width:4%;}
+		
+		#change{width:408px; height:50px; font-size:10pt;
+						background-color:#9FEF00; border-radius: 10px; font-family:Calibri; font-weight:bold;
+						outline:none; border:none;}
+		#change:hover{background-color:#BBFF34;}
+		#changeOther{width:200px; height:50px; background-color:#9FEF00;
+						text-align:center; font-family:Calibri; font-size:12px; font-weight:bold; outline:none;
+						border:none; border-radius: 10px;}
+		#changeOther:hover{background-color:#BBFF34;}
+		
+	</style>
+</head>
+
+<body class="darkBlue">
+	<div class="darkBlue" style="position:fixed; width:100%; top:0; z-index: 1">
+		<br>	
+		<div style="width:98%; overflow:hidden;">
+				<a href="https://www.hackthebox.com/">
+					<img class="autoSize-logo" src="image/logo_green.png" 
+					alt="Hack The Box: Cybersecurity Training" title="logo" /> 
+				</a>
+				<div style="float:right">
+					<button style="width:35px; height:35px; background-color:#111927; border:none;"> 
+						<img src="image/button.png" style="width:35px; height:35px;" class="frontImg">
+						<img src="image/button_grey.png" style="width:35px; height:35px;" class="backImag">
+					</button>
+				</div>
+		</div>	
+		<br>		
+	</div>
+	<div class="blue">
+	<div><br><br><br><br></div>
+		<div><h1>Certificate Validation<h1></div>
+		<div>
+			<p style="color:#A4B1CD; font-size:20px;">
+				Check the validity of Hack The Box certificates and look up <br>
+				student/employee IDs.
+			</p>
+		</div>
+		<div><br><br><br></div>
+		<div style="text-align:center">
+			<div>
+				<form class="form-search">
+					<input type="text" value="   Full name" style="width:400px; height:50px; font-size:10pt;
+						background-color:#1A2332; color:white; border-radius: 10px; border:none; color:#A4B1CD">
+						<br><br>
+					<input type="text" value="   Certificate Number or Student ID" 
+						style="width:400px; height:50px; font-size:10pt; background-color:#1A2332;
+						color:white; border-radius: 10px; border:none; color:#A4B1CD">
+						<br><br>
+					<input type="submit" value="SEARCH" id="change">
+				</form>
+				<div><br><br></div>
+		</div>
+	</div>
+	<div class="lightBlue" style="text-align:center">
+		<div><br></div>
+		<div><h1>Get your team certified<h1></div>
+		<div style="color:#A4B1CD; font-size:20px;">
+			Employee certificates and a company-wide <br> 
+			one will await at the end of any successful <br> 
+			scenario completion.
+		</div>
+		<div><br><br></div>
+		<div>
+			<form action="https://www.hackthebox.com/business/professional-labs">
+				<input type="submit" value="GET STARTED" id="changeOther" style="">
+			</form>
+		</div>
+		<div><br><br><br><br></div>
+			<div>
+				<img src="image/ProLabs_Certificate_RastaLabs.jpg" alt="certificate" style="height:70%;
+				width:70%; shadow:20px 20px 20px 20px; transform:rotate(7deg); z-index: -1; border-radius: 10px" >
+			</div>
+		<div><br><br><br><br><br></div>
+	</div>
+	<div class="darkBlue">
+		<div><br><br><br></div>
+		<div style="float:left; width:25%;">
+			<div>
+				<ul>
+					<li>
+						<a href="https://www.hackthebox.com/"><img src="image/logo_white.png"></a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li href=""><a href="https://www.hackthebox.com/">HACKER</a></li>
+					<li href=""><a href="https://www.hackthebox.com/business-cyber-security-training">BUSINESS</a></li>
+					<li href=""><a href="https://www.hackthebox.com/universities">UNIVERSITY</a></li>
+				</ul>
+			</div>
+			<div>
+				<div>
+					<ul style="float:left;">
+						<li>
+							<div>
+								<a href="https://www.linkedin.com/company/hackthebox/">
+									<img src="image/linkedIn.png" class="frontImg">
+									<img src="image/linkedIn_green.png" class="backImg">
+								</a>
+							</div>
+						</li>
+					</ul>
+					<ul style="float:left;">
+						<li>
+							<div>
+								<a href="https://twitter.com/hackthebox_eu">
+									<img src="image/twitter.png" class="frontImg">
+									<img src="image/twitter_green.png" class="backImg">
+								</a>
+							</div>
+						</li>
+					</ul>
+					<ul style="float:left;">
+						<li>
+							<div>
+								<a href="https://twitter.com/hackthebox_eu">
+									<a href="https://www.instagram.com/hackthebox/">
+										<img src="image/instagram.png" class="frontImg">
+										<img src="image/instagram_green.png" class="backImg">
+									</a>
+								</a>
+							</div>
+						</li>
+					</ul>
+					<ul style="float:left;">
+						<li>
+							<div>
+								<a href="https://www.facebook.com/hackthebox.eu">
+									<img src="image/facebook.png" class="frontImg">
+									<img src="image/facebook_green.png" class="backImg">
+								</a>
+							</div>
+						</li>
+					</ul>
+					<ul style="float:left;">
+						<li>
+							<div>
+								<a href="https://www.youtube.com/c/HackTheBox/featured">
+									<img src="image/youtube.png" class="frontImg">
+									<img src="image/youtube_green.png" class="backImg">
+								</a>
+							</div>
+						</li>
+					</ul>
+					<ul style="float:left;">
+						<li>
+							<div>
+								<a href="https://discord.com/invite/hackthebox">
+									<img src="image/discord.png" class="frontImg">
+									<img src="image/discord_green.png" class="backImg">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div style="float:left; width:25%;">
+					<ul>
+						<li style="color:white">Products</li>
+						<li><a href="https://www.hackthebox.com/hacker/hacking-labs">Hacking Labs</a></li>
+						<li><a href="https://www.hackthebox.com/hacker/pro-labs">Pro Labs</a></li>
+						<li><a href="https://www.hackthebox.com/hacker/hacking-battlegrounds">Battlegrounds</a></li>
+						<li><a href="https://www.hackthebox.com/hacker/ctf">Capture trhe Flag</a></li>
+						<li><a href="https://academy.hackthebox.eu/">Academy</a></li>
+						<li><a href="https://www.hackthebox.com/hacker/infosec-careers">InfoSec Careers</a></li>
+					</ul>
+		</div>
+		<div style="float:left; width:25%;">				
+					<ul>
+						<li style="color:white">Company</li>
+						<li><a href="https://www.hackthebox.com/about-us">About Us</a></li>
+						<li><a href="https://www.hackthebox.com/join-us">Join Us</a></li>
+						<li><a href="https://www.hackthebox.com/contact-us">Contact Us</a></li>
+						<li><a href="https://www.hackthebox.com/giftcards">Swag</a></li>
+						<li><a href="https://www.hackthebox.com/newsroom">Gift Cards</a></li>
+						<li><a href="https://www.hackthebox.com/newsroom">News</a></li>
+						<li><a href="https://resources.hackthebox.eu/hack-the-box-newsletter-sign-up">Newsletter</a></li>
+					</ul>
+		</div>
+		<div style="float:left; width:25%;">
+					<ul>
+						<li style="color:white">Ressources</li>
+						<li><a href="https://help.hackthebox.eu/">Knowledge Base</a></li>
+						<li><a href="https://www.hackthebox.com/blog">Blog</a></li>
+						<li><a href="https://forum.hackthebox.eu/">Forum</a></li>
+						<li><a href="https://www.hackthebox.com/community">Community</a></li>
+						<li><a href="https://www.hackthebox.com/meetups">Meetups</a></li>
+						<li><a href="https://www.hackthebox.com/testimonials">Testimonials</a></li>
+						<li><a href="https://www.hackthebox.com/certificates">Certificate Validation</a></li>
+						<li><a href="https://www.hackthebox.com/members">Players</a></li>
+						<li><a href="https://www.hackthebox.com/teams">Teams</a></li>
+					</ul>
+		</div>
+		<div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+		<div>	
+			<div style="width:10%; float:left;"><br></div>
+				<div style="width:80%; float:left;">
+					<div style="width:10%; float:left;"><br></div>
+					<p style="float:left; color:#A4B1CD; width:25%;">
+						© 2021 Hack The Box					
+					</p>
+					<p style="float:left; width:25%;">
+						<a href="https://www.hackthebox.com/aup" style="color:#A4B1CD; text-decoration:none">Acceptable Use Policy</a>
+					</p>
+					<p style="float:left; width:25%;">
+						<a href="https://www.hackthebox.com/tos" style="color:#A4B1CD; text-decoration:none">Terms of Service</a>
+					</p>
+					<br><br>
+					<div style="width:20%; float:left;"><br></div>
+					<p style="float:left; width:25%;">
+						<a href="https://www.hackthebox.com/privacypolicy" style="color:#A4B1CD; text-decoration:none">Privacy Policy</a>
+					</p>
+					<p style="float:left; width:25%;">
+						<a href="javascript:void(0);" style="color:#A4B1CD; text-decoration:none;">Cookie Settings</a>
+					</p>
+				</div>
+		</div>
+	</div>
+
+</body>
